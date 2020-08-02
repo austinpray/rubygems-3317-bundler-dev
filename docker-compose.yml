@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  base:
+    build:
+      context: .
+      target: base
+  latest_git:
+    build:
+      context: .
+      target: latest_git
+  non_root:
+    build:
+      context: .
+      target: non_root
+  lg_x_nr:
+    build:
+      context: .
+      target: lg_x_nr
