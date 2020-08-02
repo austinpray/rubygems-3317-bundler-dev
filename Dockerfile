@@ -25,6 +25,6 @@ RUN git --version \
 
 FROM base as non_root
 
-RUN adduser -D austinpray
+RUN useradd -m austinpray
 RUN chown -R austinpray:austinpray /rubygems
 USER austinpray
