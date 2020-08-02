@@ -8,5 +8,8 @@ services:
     build:
       context: .
       target: latest_git
-
+  non_root:
+    build:
+      context: .
+      target: non_root
 
