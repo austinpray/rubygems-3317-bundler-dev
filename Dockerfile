@@ -27,3 +27,10 @@ FROM base as non_root
 RUN useradd -m austinpray
 RUN chown -R austinpray:austinpray /rubygems
 USER austinpray
+
+# latest git + non-root user
+FROM latest_git as lg_x_nr
+
+RUN useradd -m austinpray
+RUN chown -R austinpray:austinpray /rubygems
+USER austinpray

@@ -12,4 +12,7 @@ services:
     build:
       context: .
       target: non_root
-
+  lg_x_nr:
+    build:
+      context: .
+      target: lg_x_nr
